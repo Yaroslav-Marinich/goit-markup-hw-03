@@ -27,8 +27,18 @@ ul {
   padding-left: 0;
 }
 
+button {
+  cursor: pointer;
+}
+
+.contacts {
+  font-style: normal;
+}
+
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -48,17 +58,32 @@ body {
 
 .container {
   width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  /* outline: 1px solid red; */
 }
 
 .section {
-  /* padding-top: 94px;
-  padding-bottom: 94px; */
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /*---------------- head -------------------*/
 .header {
   background-color: var(--white-color);
   border-bottom: 1px solid #ececec;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav > .nav-logo {
+  margin-right: 93px;
 }
 
 .nav-logo,
@@ -79,6 +104,11 @@ body {
   color: #000000;
 }
 
+.nav-list {
+  display: flex;
+  gap: 50px;
+}
+
 .nav-list .nav-link.current {
   color: var(--accent-color);
 }
@@ -89,11 +119,18 @@ body {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  display: block;
 }
 
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
+}
+
+.contact-list {
+  display: flex;
+  gap: 50px;
+  margin-left: auto;
 }
 
 .contact-link {
@@ -123,6 +160,8 @@ body {
 /*------------------- hero -----------------*/
 .hero {
   background: #2f303a;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -133,6 +172,10 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  width: 696px;
 }
 
 .button {
@@ -150,6 +193,8 @@ body {
   border: 2px solid var(--btn-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  margin: 0 auto;
+  padding: 10px 32px;
 }
 
 .button:hover,
@@ -162,10 +207,21 @@ body {
 }
 /*--------------- features ---------------*/
 .features-title {
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
+  margin-bottom: 10px;
+}
+
+.features-list {
+  display: flex;
+  gap: 30px;
+}
+
+.features-item {
+  display: block;
 }
 
 .features-text {
@@ -174,6 +230,10 @@ body {
 }
 
 /* -------------- preview ----------------- */
+.preview {
+  padding-top: 0;
+}
+
 .section-title {
   font-size: 36px;
   line-height: 1.16;
@@ -182,13 +242,22 @@ body {
   color: var(--title-text-color);
 }
 
-.img {
-  width: 370px;
-  height: 294px;
+.preview-title {
+  margin-bottom: 50px;
 }
+
 /* ----------------- team ---------------- */
 .team {
   background-color: #f5f4fa;
+}
+
+.main-list {
+  display: flex;
+  gap: 30px;
+}
+
+.team-main-title {
+  margin-bottom: 38px;
 }
 
 .team-title {
@@ -198,6 +267,19 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+  margin-bottom: 10px;
+}
+
+.team-wrap {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team-item {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-text {
@@ -210,16 +292,22 @@ body {
 /* ---------------- footer ----------------- */
 .footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .second-logo {
   color: var(--white-color);
 }
 
-.address-item {
+.address {
+  margin-top: 20px;
+}
+
+.address-item:not(:last-child) {
   line-height: 1.71;
   letter-spacing: 0.03em;
-  font-style: normal;
+  margin-bottom: 9px;
 }
 
 .address-content {
@@ -237,6 +325,13 @@ body {
 
 /* ----------- portfolio ------------- */
 /* filter */
+.filters-list {
+  margin-bottom: 34px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
 .filters-btn {
   font-family: inherit;
   font-weight: 500;
@@ -248,6 +343,7 @@ body {
   background: #f5f4fa;
   border: 2px solid #f5f4fa;
   border-radius: 4px;
+  padding: 6px 22px;
 }
 
 .filters-btn:hover,
@@ -260,11 +356,17 @@ body {
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   cursor: pointer;
+  /* padding: 6px 25px; ???????? */
 }
 
 .content-item {
   background: var(--white-color);
-  border: 1px solid #eeeeee;
+}
+
+.content-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .content-title {
@@ -272,6 +374,13 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
+}
+
+.content-wrap {
+  padding: 20px 24px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
 }
 
 .content-text {
