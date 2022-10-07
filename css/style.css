@@ -222,6 +222,7 @@ body {
 
 .features-item {
   display: block;
+  width: 270px;
 }
 
 .features-text {
