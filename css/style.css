@@ -5,11 +5,14 @@
   --btn-color: #2196f3;
   --white-color: #ffffff;
 }
+html {
+  box-sizing: border-box;
+}
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 p,
